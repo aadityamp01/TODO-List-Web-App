@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Todo List App </title>
+</head>
+
+<body style="background-color: #cccccc;">
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">To-Do List Web-App</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card card-body">
+                        <form id="new-product">
+                            <div class="form-group">
+                                <input type="text" id="title" class="form-control" maxlength="50" autocomplete="off"
+                                    placeholder="Enter Tasks Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="price" class="form-control"
+                                    maxlength="20" autocomplete="off" placeholder="Enter Date Duration" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea type="text" id="description" class="form-control"
+                                    maxlength="500" autocomplete="off" placeholder="Details" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Add New Task</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-8">
+				<center><h3 style="color:rgb(39, 104, 2);">List of Tasks</h3></center>
+                <div class="row">
+                    <div class="col-sm-3 text-left title-head">
+                        <p class="font-weight-bold">Task Name</p>
+                    </div>
+                    <div class="col-sm-3 text-left title-head">
+                        <p class="font-weight-bold">Date</p>
+                    </div>
+                    <div class="col-sm-3 text-left desc-head">
+                        <p class="font-weight-bold">Details</p>
+                    </div>
+                    <div class="col-sm-3 text-right del-head">
+                        <p class="font-weight-bold">Delete</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="tasks"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
